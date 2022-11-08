@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: NatureGreen;
+    src: url(fontes/GREEN\ NATURE.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imagens/nature-gd-leve.jpeg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+nav {
+    width: 100%;
+    padding: 2%;
+}
+nav h1 {
+    font-family: 'NatureGreen', Arial;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    background-color: rgba(175, 179, 175, 0.507);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    padding-top: 60px;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    
+}
+form h3 {
+    text-align: center;
+    color: rgba(6, 71, 6, 0.973);
+    font-family: 'NatureGreen', Arial;
+    font-weight: 1000;
+    font-size: 3em;
+
+}
+form input[type=text], form input[type=password] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgba(204, 204, 204, 0.479);
+    padding-left: 10px;
+    margin: 10px 0px;
+    
+}
+form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(6, 71, 6, 0.815);
+    color: white;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0px;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+form input[type=text]:focus {
+    outline: 0;
+}
+form input[type=password]:focus {
+    outline: 0;
+}
+    
+form input[type=submit]:hover {
+    background-color: rgba(6, 71, 6, 0.973);
+
+}
+div#forget {
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+}
+div#forget a {
+    text-decoration: none;
+    color: rgba(6, 71, 6, 0.815);
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+div#forget a:hover {
+    color: rgba(6, 71, 6, 0.973);
+}
+form div.redes {
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
